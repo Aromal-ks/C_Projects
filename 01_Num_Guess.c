@@ -4,6 +4,17 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdbool.h>
+void printWelcome(){
+     printf("          _______  _        _______  _______  _______  _______ \n");
+    printf(" |\\     /|(  ____ \\( \\      (  ____ \\(  ___  )(       )(  ____ \\\n");
+    printf(" | )   ( || (    \\/| (      | (    \\/| (   ) || () () || (    \\/\n");
+    printf(" | | _ | || (__    | |      | |      | |   | || || || || (__    \n");
+    printf(" | |( )| ||  __)   | |      | |      | |   | || |(_)| ||  __)   \n");
+    printf(" | || || || (      | |      | |      | |   | || |   | || (      \n");
+    printf(" | () () || (____/\\| (____/\\| (____/\\| (___) || )   ( || (____/\\\n");
+    printf(" (_______)(_______/(_______/(_______/(_______)|/     \\|(_______/ \n");
+    printf("\n");
+}
 
 void printrules()
 {
@@ -16,9 +27,9 @@ void printrules()
 }
 
 int main()
-{
+{   
+    printWelcome();
     char rule[5];
-    printf("Welcome to Number Guessing Game!!!\n");
     printf("Enter \"show\" to see the rules else we will continue: ");
     fgets(rule, sizeof(rule), stdin);
     rule[strcspn(rule, "\n")] = '\0';
@@ -28,8 +39,6 @@ int main()
     }
     srand(time(0));
     int randomNumber = (rand() % 100) + 1; // Random number generation
-    printf("Random number between 1 and 100: %d\n", randomNumber);
-
     int life;
     char mode[6];
     printf("Hard or Easy mode: ");
@@ -78,6 +87,7 @@ int main()
         if (life == 0)
         {
             printf("\nYou ran out of life\n");
+            printf("The answer was %d",randomNumber);
             flag = false;
         }
         guess_num++;
