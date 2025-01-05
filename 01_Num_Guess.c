@@ -20,8 +20,8 @@ void printrules()
     printf("***     Rules to Follow     ***\n");
     printf("1. The computer generate a random number from 1 to 100 and the user want to guess it.\n");
     printf("2. For each guess user will lose each life\n");
-    printf("3. there shoul be two modes hard and easy\n");
-    printf("4. In hard there is only 5 life and for easy you get 10.\n");
+    printf("3. There are  two modes \"Hard\" & \"Easy\" \n");
+    printf("4. In \"Hard\" there is only 5 life and for \"Easy\" you get 10.\n");
     printf("\n");
 }
 
