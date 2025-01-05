@@ -1,13 +1,3 @@
-/*
-Number Guessing Game:
-The programm will generate a random number from 1 to 100 and the user want to guess it.
-if guess is below print low if high print high if correct print you won
-for each guess user will lose each life
-there shoul be two modes hard and easy
-in hard there is only 5 life
-in easy 10 life is provided
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
